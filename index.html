@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aumentar Fonte</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Biblioteca JQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Script com a função de aumentar a fonte -->
+    <script src="js/app.js"></script>
 </head>
 
 <body>
+    <!-- Botões de Acessibilidade -->
+    <!-- Botão + -->
+    <button onclick="fonte('a');">A+</button>
+    <!-- Botão - -->
+    <button onclick="fonte('n');" title="Normal">A</button>
+    <!-- Botão - -->
+    <button onclick="fonte('d');">A-</button>
 
+    <!-- Exemplos simples de aplicação
+    Basta adicionar a class .acessibilidade aos
+    elementos que devem ser afetados pela função. -->
+    <p class="acessibilidade">
+        Exemplo de texto com a class Acessibilidade;
+    </p>
+    <p class="acessibilidade">
+        Outro exemplo de texto com a class Acessibilidade;
+    </p>
+    <p>
+        Este não tem a class Acessibilidade; (Não deve ser afetado)
+    </p>
+
+    <ul class="acessibilidade">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 </body>
 
 </html>
